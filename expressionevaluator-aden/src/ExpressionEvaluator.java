@@ -109,26 +109,6 @@ public class ExpressionEvaluator {
 	}
 
 	/**
-	 * Calculate data based on data from dataStack and operator from operStack.
-	 *
-	 * @return the double
-	 */
-//	Double calculateData(Double data1, Double data2, String operation) {
-//		switch(operation) {
-//		case "*": return (data2 * data1);
-//		case "/": 
-//			if(data1 == 0) {
-//				return null;
-//			} else {
-//				return (data2 / data1);
-//			}
-//		case "+": return (data2 + data1);
-//		case "-": return (data2 - data1);
-//		default: return OP_ERROR;
-//		}
-//	}
-
-	/**
 	 * Evaluates the top of stack
 	 *
 	 * @return true, if successful
@@ -150,14 +130,6 @@ public class ExpressionEvaluator {
 			case "-": dataStack.push(data2 - data1); return "";
 			default: return OP_ERROR;
 		}
-		
-//		Double calculate = calculateData(dataStack.pop(), dataStack.pop(), operStack.pop());
-//		if(calculate != null) {
-//			dataStack.push(calculate);
-//			return true;
-//		} else {
-//			return false;
-//		}
 	}
 	
 	
@@ -251,11 +223,5 @@ public class ExpressionEvaluator {
 			errorMsg = evalTOS();
 			if(!errorMsg.isEmpty()) {return errorMsg;}}
 		return (str + " = " + Double.toString(dataStack.pop()));
-
-//		System.out.println("str after converting: " + str);
-//		for(int i = 0; i < tokens.length; i++) {
-//			System.out.println("token " + (i + 1) + ": " + tokens[i]);
-//		}
 	}
-
 }
