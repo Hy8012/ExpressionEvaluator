@@ -1,12 +1,27 @@
 # Expression Evaluator
 
-<ins>This repo is a re-upload</ins>
+> Author(s): Henry Yost (henry-AY)
+>
+> <ins>This repo is a re-upload</ins>
 
+### Objective
 In this project, we had to code a fully functional calculator that could follow the rules of PEMDAS, 
 without explicitly adding brackets.
 
 In Expression Evaluator, I had to pass the basic functionality of a calculator using integers and doubles. 
-Furthermore, this was paired with static error checking, in which the error would be detected before running:
+Furthermore, this was paired with static error checking, in which the error would be detected before running:
+
+<hr>
+
+<p align="center">
+  <image src="https://github.com/henry-AY/ExpressionEvaluator/blob/main/md_files/first_expression.png?raw=true" width="644" height="220"/>
+</p>
+
+<p align="center">
+  <image src="https://github.com/henry-AY/ExpressionEvaluator/blob/main/md_files/second_expression.png?raw=true" width="645" height="223"/>
+</p>
+
+<hr>
 
 **1)** "Op_Error": incomplete operations
 
